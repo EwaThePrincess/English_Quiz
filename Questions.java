@@ -136,7 +136,7 @@ public static class Questions {
 
         int wynik = 0;
 
-        for (int i=0; i <= questions.length; i++) {
+        for (int i=0; i <= questions.length-1; i++) {
 
             System.out.println(questions[i].getQuestion());
             Scanner scanner = new Scanner(System.in);
@@ -145,7 +145,8 @@ public static class Questions {
 
             if (userInput.equals(questions[i].getAnswer())) {
                 wynik++;
-
+            } else if (userInput.toUpperCase().equals(questions[i].getAnswer())) {
+                wynik++;
             }
             System.out.println(wynik);
         }

@@ -186,7 +186,7 @@ public class UI {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         JLabel label = new JLabel("Welcome to the EnglishQuiz!");
-        JButton startButton = new JButton("Start English test");
+        JButton startButton = new JButton("Start");
         JButton finishButton = new JButton("Finish");
         JLabel scoreLabel = new JLabel();
 
@@ -221,6 +221,7 @@ public class UI {
             startButton.setVisible(false);
             label.setVisible(false);
             currentQuestion=0;
+            score=0;
 
             Questions q = questions[currentQuestion];
 
